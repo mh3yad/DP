@@ -1,5 +1,5 @@
 <?php
-namespace App\Adapter;
+namespace App\Structural\Adapter;
 class XML
 {
     public function print(\SimpleXMLElement $XMLElement): bool|string

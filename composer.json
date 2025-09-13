@@ -1,0 +1,19 @@
+{
+    "name": "m/dp",
+    "autoload": {
+        "psr-4": {
+            "App\\": "."
+        }
+    },
+    "authors": [
+        {
+            "name": "mohammed mahmoud",
+            "email": "mohammed.mahmoud@scandiweb.com"
+        }
+    ],
+    "require": {
+      "ext-xml": "*",
+      "ext-xmlreader": "*",
+      "ext-simplexml": "*"
+    }
+}

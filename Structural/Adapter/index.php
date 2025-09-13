@@ -1,15 +1,15 @@
 <?php
 
-require_once("../vendor/autoload.php");
+require_once("../../vendor/autoload.php");
 
-use App\Adapter\Json;
-use App\Adapter\XML;
-use App\Adapter\XMLAdapter;
+use App\Structural\Adapter\Json;
+use App\Structural\Adapter\XML;
+use App\Structural\Adapter\XMLAdapter;
 
 $json = new Json("this is json Data");
-echo "Json data is = " . $json->getData(). PHP_EOL;
+echo "JSON DATA = " . $json->getData(). PHP_EOL;
 
 //converting Json to XML with XMK adapter
 $XMLAdapter = new XMLAdapter($json);
 $xmlParser = new XML();
-echo $xmlParser->print($XMLAdapter->getData());
+echo "XML DATA = " .$xmlParser->print($XMLAdapter->getData());
